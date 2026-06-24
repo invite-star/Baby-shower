@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Yashaswini Baby Shower · July 05, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0e3244;
+  --teal:#1d5468;
+  --teal-lt:#2d7090;
+  --gold:#c9a84c;
+  --gold-lt:#e8c96e;
+  --gold-dk:#9a7330;
+  --cream:#f4faf8;
+  --cream-dk:#daeee8;
+  --text:#0c1f2c;
+  --text-lt:#1e4a60;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Lato',sans-serif;
+  font-weight:300;
+  background:var(--cream);
+  color:var(--text);
+  overflow-x:hidden;
+  line-height:1.7;
+  max-width:680px;
+  margin:0 auto;
+}
+a{color:inherit;text-decoration:none}
+
+/* ── TOP BAND ── */
+.top-band{
+  background:var(--navy);
+  padding:.55rem 1rem;
+  text-align:center;
+  border-bottom:1.5px solid rgba(201,168,76,.35);
+}
+.top-band p{
+  font-family:'Cinzel',serif;
+  font-size:.65rem;
+  letter-spacing:.22em;
+  color:rgba(232,201,110,.85);
+  text-transform:uppercase;
+}
+
+/* ── HERO CARD ── */
+.hero-card{
+  background:linear-gradient(160deg,#f4faf8 0%,#e8f4f0 60%,#daeee8 100%);
+  padding:2.5rem 1.8rem 2rem;
+  text-align:center;
+  border-bottom:2px solid rgba(201,168,76,.3);
+  position:relative;
+}
+.orn-top{display:block;margin:0 auto 1.4rem;width:min(280px,90%)}
+.invite-fam{
+  font-family:'Cinzel',serif;
+  font-size:.8rem;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:.6rem;
+}
+.invite-cordially{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.05rem;
+  font-style:italic;
+  color:var(--text-lt);
+  margin-bottom:.2rem;
+}
+.invite-event{
+  font-family:'Cinzel',serif;
+  font-size:clamp(2rem,8vw,2.8rem);
+  font-weight:600;
+  letter-spacing:.04em;
+  color:var(--navy);
+  line-height:1.1;
+  margin:.1rem 0;
+}
+.invite-and{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem;
+  font-style:italic;
+  font-weight:600;
+  color:var(--text-lt);
+  margin:.25rem 0;
+}
+.invite-name{
+  font-family:'Cinzel',serif;
+  font-size:clamp(1.15rem,4vw,1.5rem);
+  font-weight:600;
+  color:var(--navy);
+  letter-spacing:.03em;
+  margin-bottom:.5rem;
+}
+.rule{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  margin:1.2rem auto;
+  width:min(340px,90%);
+}
+.rule span{flex:1;height:1px;background:var(--gold);opacity:.45}
+.rule em{color:var(--gold);font-style:normal;font-size:.6rem}
+.dg{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.5rem 2rem;
+  width:min(440px,100%);
+  margin:0 auto 1rem;
+  padding:.9rem 0;
+  border-top:1px solid rgba(154,115,48,.3);
+  border-bottom:1px solid rgba(154,115,48,.3);
+}
+.dg-head{
+  font-family:'Cinzel',serif;
+  font-size:.65rem;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--navy);
+  font-weight:600;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  margin-bottom:.3rem;
+}
+.dg-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.05rem;
+  font-weight:500;
+  color:var(--text);
+  line-height:1.7;
+}
+.invite-note{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem;
+  font-weight:500;
+  color:var(--text-lt);
+  text-align:center;
+  line-height:1.7;
+  margin-bottom:1.4rem;
+}
+
+/* ── IMAGE PANELS ── */
+.img-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:2px solid rgba(201,168,76,.4);
+  border-bottom:2px solid rgba(201,168,76,.4);
+}
+.img-panel{overflow:hidden}
+.img-panel:first-child{border-right:1px solid rgba(201,168,76,.3)}
+.img-panel svg{display:block;width:100%}
+
+/* ── COUNTDOWN ── */
+.cd-bar{
+  background:linear-gradient(135deg,#0a2535,#0e3244,#082030);
+  border-top:2px solid rgba(201,168,76,.5);
+  border-bottom:2px solid rgba(201,168,76,.5);
+  padding:1rem 1.5rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1.6rem;
+  flex-wrap:wrap;
+}
+.cd-label{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:.94rem;
+  color:rgba(232,210,160,.8);
+  letter-spacing:.08em;
+}
+.cd-units{display:flex;align-items:center;gap:.3rem}
+.cu{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:3rem;
+}
+.cu span{
+  font-family:'Cinzel',serif;
+  font-size:1.6rem;
+  line-height:1;
+  color:var(--gold-lt);
+}
+.cu label{
+  font-size:.55rem;
+  color:rgba(232,210,160,.6);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  margin-top:2px;
+}
+.cu-sep{
+  font-size:1.4rem;
+  color:var(--gold);
+  opacity:.55;
+  padding-bottom:.3rem;
+}
+
+/* ── RSVP SECTION ── */
+.rsvp-section{
+  background:linear-gradient(180deg,var(--teal-lt),var(--navy));
+  padding:2.5rem 1.5rem;
+  text-align:center;
+}
+.rsvp-eye{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:.9rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--gold-lt);
+  margin-bottom:.3rem;
+}
+.rsvp-title{
+  font-family:'Cinzel',serif;
+  font-size:2rem;
+  font-weight:500;
+  color:var(--cream);
+  margin-bottom:.4rem;
+}
+.rsvp-sub{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.08rem;
+  font-style:italic;
+  color:rgba(253,246,236,.7);
+  margin-bottom:1.6rem;
+  line-height:1.6;
+}
+.rsvp-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.9rem 2.4rem;
+  border-radius:999px;
+  font-family:'Cinzel',serif;
+  font-size:.68rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  text-decoration:none;
+  background:linear-gradient(150deg,#f3dd91,var(--gold) 55%,#a7852c);
+  color:#2a1309;
+  box-shadow:0 10px 26px rgba(154,115,48,.35);
+  transition:transform .25s,box-shadow .25s;
+}
+.rsvp-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 36px rgba(154,115,48,.45);
+}
+
+/* ── FOOTER ── */
+footer{
+  background:#0a2535;
+  text-align:center;
+  padding:2rem 1rem;
+  font-family:'Cinzel',serif;
+  font-size:.6rem;
+  letter-spacing:.15em;
+  color:rgba(255,220,160,.55);
+  text-transform:uppercase;
+}
+
+@media (max-width:600px){
+  .dg{grid-template-columns:1fr;gap:1rem}
+  .img-row{grid-template-columns:1fr}
+  .img-panel:first-child{border-right:none;border-bottom:1px solid rgba(201,168,76,.3)}
+}
+</style>
+</head>
+<body>
+
+<div class="top-band">
+  <p>Yashaswini Baby Shower · July 05, 2026 · Ottawa</p>
+</div>
+
+<div class="hero-card">
+  <svg class="orn-top" viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="24" cy="40" rx="20" ry="13" fill="#ED93B1" opacity=".8"/>
+    <ellipse cx="42" cy="26" rx="16" ry="10" fill="#F4C0D1" opacity=".75"/>
+    <ellipse cx="55" cy="43" rx="13" ry="9" fill="#EF9BB1" opacity=".7"/>
+    <circle cx="24" cy="40" r="5" fill="#FAC775"/>
+    <circle cx="42" cy="26" r="4" fill="#FAEEDA"/>
+    <ellipse cx="10" cy="55" rx="16" ry="6" fill="#97C459" opacity=".55" transform="rotate(-22 10 55)"/>
+    <ellipse cx="62" cy="58" rx="13" ry="5" fill="#639922" opacity=".5" transform="rotate(18 62 58)"/>
+    <text x="140" y="46" text-anchor="middle" font-family="serif" font-size="36" fill="#c9a84c" opacity=".9">ॐ</text>
+    <ellipse cx="256" cy="40" rx="20" ry="13" fill="#ED93B1" opacity=".8"/>
+    <ellipse cx="238" cy="26" rx="16" ry="10" fill="#F4C0D1" opacity=".75"/>
+    <ellipse cx="225" cy="43" rx="13" ry="9" fill="#EF9BB1" opacity=".7"/>
+    <circle cx="256" cy="40" r="5" fill="#FAC775"/>
+    <circle cx="238" cy="26" r="4" fill="#FAEEDA"/>
+    <ellipse cx="270" cy="55" rx="16" ry="6" fill="#97C459" opacity=".55" transform="rotate(22 270 55)"/>
+    <ellipse cx="218" cy="58" rx="13" ry="5" fill="#639922" opacity=".5" transform="rotate(-18 218 58)"/>
+  </svg>
+
+  <p class="invite-fam">Ayyagari's &amp; Chilakamarri's Families</p>
+  <p class="invite-cordially">Cordially invite you to the</p>
+  <p class="invite-event">Baby Shower</p>
+  <p class="invite-and">of</p>
+  <p class="invite-name">Yashaswini</p>
+
+  <div class="rule"><span></span><em>◆</em><span></span></div>
+
+  <div class="dg">
+    <div>
+      <p class="dg-head">Date &amp; Time</p>
+      <p class="dg-val">Sunday, July 05<sup>th</sup>, 2026</p>
+      <p class="dg-val">From 10:00 AM Onwards</p>
+      <p class="dg-val">Doors close at 2:00 PM</p>
+    </div>
+    <div>
+      <p class="dg-head">Venue</p>
+      <p class="dg-val">Carp Memorial Hall</p>
+      <p class="dg-val">3739 Carp Rd.</p>
+      <p class="dg-val">Ottawa, ON K0A 1L0</p>
+    </div>
+  </div>
+
+  <p class="invite-note">
+    Everyone is welcome<br/>
+    Kindly RSVP by July 1<sup>st</sup>, 2026
+  </p>
+
+  <div class="rule"><span></span><em>◆</em><span></span></div>
+</div>
+
+<div class="img-row">
+  <div class="img-panel">
+    <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="340" height="220" fill="#FDF0F5"/>
+      <ellipse cx="80" cy="100" rx="70" ry="55" fill="#F9D0E2" opacity=".4"/>
+      <ellipse cx="260" cy="110" rx="65" ry="50" fill="#FCE4EE" opacity=".35"/>
+      <ellipse cx="55" cy="110" rx="24" ry="16" fill="#EF9BB1"/>
+      <ellipse cx="72" cy="88" rx="19" ry="13" fill="#ED93B1"/>
+      <ellipse cx="88" cy="112" rx="16" ry="12" fill="#F4C0D1"/>
+      <circle cx="55" cy="110" r="5.5" fill="#FAC775"/>
+      <circle cx="72" cy="88" r="4.5" fill="#FAC775"/>
+      <circle cx="88" cy="112" r="4" fill="#FAEEDA"/>
+      <ellipse cx="30" cy="135" rx="18" ry="7" fill="#97C459" opacity=".7" transform="rotate(-30 30 135)"/>
+      <ellipse cx="100" cy="140" rx="16" ry="6" fill="#639922" opacity=".6" transform="rotate(20 100 140)"/>
+      <ellipse cx="285" cy="95" rx="22" ry="12" fill="#ED93B1" opacity=".75" transform="rotate(-15 285 95)"/>
+      <ellipse cx="263" cy="90" rx="17" ry="10" fill="#F4C0D1" opacity=".7" transform="rotate(18 263 90)"/>
+      <circle cx="273" cy="93" r="5" fill="#993556"/>
+      <line x1="273" y1="88" x2="268" y2="79" stroke="#993556" stroke-width="1"/>
+      <line x1="273" y1="88" x2="278" y2="79" stroke="#993556" stroke-width="1"/>
+      <ellipse cx="305" cy="145" rx="20" ry="14" fill="#EF9BB1"/>
+      <ellipse cx="325" cy="128" rx="16" ry="11" fill="#F0A8C3"/>
+      <circle cx="305" cy="145" r="5" fill="#FAC775"/>
+      <ellipse cx="155" cy="200" rx="40" ry="10" fill="#C0DD97" opacity=".4"/>
+      <ellipse cx="225" cy="208" rx="30" ry="8" fill="#97C459" opacity=".35"/>
+    </svg>
+  </div>
+  <div class="img-panel">
+    <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="340" height="220" fill="#EEF7FF"/>
+      <ellipse cx="100" cy="60" rx="55" ry="35" fill="#D0E8F7" opacity=".4"/>
+      <ellipse cx="270" cy="170" rx="60" ry="35" fill="#B5D4F4" opacity=".3"/>
+      <path d="M90 145 Q90 105 125 100 L225 100 Q255 100 255 132 L255 158 Q255 168 245 168 L105 168 Q90 168 90 155 Z" fill="#1d5468"/>
+      <path d="M98 135 Q98 82 170 77 Q242 72 248 135" fill="#2d7090"/>
+      <path d="M248 104 Q275 72 285 72 L285 96" fill="none" stroke="#0e3244" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="122" cy="178" r="18" fill="#0e3244"/>
+      <circle cx="122" cy="178" r="12" fill="#1d5468"/>
+      <circle cx="122" cy="178" r="4" fill="#daeee8"/>
+      <circle cx="218" cy="178" r="18" fill="#0e3244"/>
+      <circle cx="218" cy="178" r="12" fill="#1d5468"/>
+      <circle cx="218" cy="178" r="4" fill="#daeee8"/>
+      <text x="170" y="212" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#1d5468" font-weight="600">Bhaskar &amp; Yashaswini</text>
+    </svg>
+  </div>
+</div>
+
+<div class="img-row">
+  <div class="img-panel">
+    <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="340" height="220" fill="#FFFBF0"/>
+      <circle cx="50" cy="50" r="35" fill="#FAEEDA" opacity=".5"/>
+      <circle cx="295" cy="170" r="40" fill="#F9D0E2" opacity=".35"/>
+      <rect x="100" y="120" width="130" height="82" rx="7" fill="#c9a84c"/>
+      <rect x="93" y="104" width="144" height="26" rx="6" fill="#9a7330"/>
+      <rect x="157" y="99" width="16" height="108" rx="4" fill="#f4faf8" opacity=".8"/>
+      <ellipse cx="165" cy="97" rx="26" ry="15" fill="#FAEEDA" transform="rotate(-22 165 97)"/>
+      <ellipse cx="165" cy="97" rx="26" ry="15" fill="#f4faf8" opacity=".8" transform="rotate(22 165 97)"/>
+      <circle cx="165" cy="99" r="10" fill="#0e3244"/>
+      <path d="M135 62 Q135 48 154 44 Q165 40 176 44 Q195 48 195 62 L206 57 L216 67 L206 77 L200 72 L200 117 L130 117 L130 72 L124 77 L114 67 L124 57 Z" fill="white" stroke="#B5D4F4" stroke-width="1.5"/>
+      <path d="M165 93 C165 93 152 84 152 76 C152 70 157 67 165 73 C173 67 178 70 178 76 C178 84 165 93 165 93Z" fill="#ED93B1"/>
+      <text x="170" y="212" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#9a7330" font-weight="600">Gifts &amp; warm wishes welcome ✦</text>
+    </svg>
+  </div>
+  <div class="img-panel">
+    <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="340" height="220" fill="#f4faf8"/>
+      <path d="M0 42 Q85 72 170 42 Q255 12 340 42" fill="none" stroke="#c9a84c" stroke-width="2"/>
+      <polygon points="15,40 42,40 28,76" fill="#ED93B1"/>
+      <polygon points="55,53 82,53 68,90" fill="#1d5468"/>
+      <polygon points="95,60 122,60 108,96" fill="#FAC775"/>
+      <polygon points="135,62 162,62 148,98" fill="#97C459"/>
+      <polygon points="175,59 202,59 188,95" fill="#ED93B1"/>
+      <polygon points="215,53 242,53 228,89" fill="#EF9F27"/>
+      <polygon points="255,44 282,44 268,80" fill="#F4C0D1"/>
+      <polygon points="295,39 322,39 308,75" fill="#97C459"/>
+      <text x="170" y="128" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#0e3244" font-weight="700">Carp Memorial Hall</text>
+      <text x="170" y="148" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#1d5468">3739 Carp Rd, Ottawa, ON</text>
+      <line x1="55" y1="158" x2="285" y2="158" stroke="#c9a84c" stroke-width="1" opacity=".5"/>
+      <text x="170" y="174" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#9a7330" font-style="italic">Sunday July 05 · 10:00 AM Onwards</text>
+      <text x="170" y="212" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#c9a84c">◆ RSVP by July 01 ◆</text>
+    </svg>
+  </div>
+</div>
+
+<div class="cd-bar">
+  <div class="cd-label">Counting down to the celebration</div>
+  <div class="cd-units" aria-live="polite">
+    <div class="cu"><span id="cdD">--</span><label>Days</label></div>
+    <div class="cu-sep">:</div>
+    <div class="cu"><span id="cdH">--</span><label>Hours</label></div>
+    <div class="cu-sep">:</div>
+    <div class="cu"><span id="cdM">--</span><label>Min</label></div>
+    <div class="cu-sep">:</div>
+    <div class="cu"><span id="cdS">--</span><label>Sec</label></div>
+  </div>
+</div>
+
+<section class="rsvp-section">
+  <p class="rsvp-eye">Kindly respond</p>
+  <h2 class="rsvp-title">RSVP by July 1st</h2>
+  <p class="rsvp-sub">
+    Please let us know if you’ll be joining us, and how many adults and children will attend.
+  </p>
+  <a
+    class="rsvp-btn"
+    href="https://forms.gle/oQ1gmKjiJ1ibPNMr9"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    RSVP Online
+  </a>
+</section>
+
+<footer>
+  With love from Bhaskar &amp; Yashaswini · July 05, 2026
+</footer>
+
+<script>
+const targetDate = new Date("2026-07-05T10:00:00-04:00");
+
+function updateCountdown() {
+  const now = new Date();
+  const diff = targetDate - now;
+
+  const d = document.getElementById("cdD");
+  const h = document.getElementById("cdH");
+  const m = document.getElementById("cdM");
+  const s = document.getElementById("cdS");
+
+  if (diff <= 0) {
+    d.textContent = "00";
+    h.textContent = "00";
+    m.textContent = "00";
+    s.textContent = "00";
+    return;
+  }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const mins = Math.floor((diff / (1000 * 60)) % 60);
+  const secs = Math.floor((diff / 1000) % 60);
+
+  d.textContent = String(days).padStart(2, "0");
+  h.textContent = String(hours).padStart(2, "0");
+  m.textContent = String(mins).padStart(2, "0");
+  s.textContent = String(secs).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
